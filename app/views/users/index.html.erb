@@ -17,7 +17,7 @@
     <% @users_facade.active_users.each do |user| %>
       <tr>
         <td><%= user.name %></td>
-        <td><%= user.human_born_date %></td>
+        <td><%= user.born_date %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -25,7 +25,7 @@
     <% end %>
   </tbody>
 </table>
-
+<hr>
 <h1>Users inactive</h1>
 
 <table>
@@ -41,7 +41,7 @@
     <% @users_facade.inactive_users.each do |user| %>
       <tr>
         <td><%= user.name %></td>
-        <td><%= user.human_born_date %></td>
+        <td><%= user.born_date %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
