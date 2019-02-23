@@ -1,0 +1,2 @@
+class PaperBook < Book
+end
