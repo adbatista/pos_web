@@ -36,3 +36,12 @@ O decorator pode ser encontrado em `app/decorators/`
 ---
 
 Para unificar a inteface na tela de listar usuários `app/views/users/index.html.erb` criei `app/facades/users_facade.rb` assim simplificou inicializaçao de objetos no controller e desacoplou a logica, deixando mais isolado e sguindo mais parar o principio de responsabilidade unica, o S do SOLID
+
+
+## Doc
+
+Diagrama UML está no diretório raiz com o nome `Diagrama.png`
+
+## Observação
+
+Tentei comentar detalhes do código principalmente os que o Ruby faz de forma diferente de outras linguagens, e não tem interface, por que o Ruby é de tipagem dinâmica e não possui interface, ruby preza mais pelo duck typing (https://pt.wikipedia.org/wiki/Duck_typing)
